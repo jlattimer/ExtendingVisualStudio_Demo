@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="SampleTemplatePackage.Jason Lattimer.61861b84-7fb5-48ad-b7c2-afc3b169a4b4" Version="1.0" Language="en-US" Publisher="Jason Lattimer" />
+		<DisplayName>SampleTemplatePackage</DisplayName>
+		<Description>Empty VSIX Project.</Description>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="SampleProjectTemplate" d:TargetPath="|SampleProjectTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+		<Asset d:Source="File" Path="Packages\Microsoft.IdentityModel.Clients.ActiveDirectory.2.19.208020213.nupkg" d:VsixSubPath="Packages" Type="Microsoft.IdentityModel.Clients.ActiveDirectory.2.19.208020213.nupkg" />
+		<Asset Type="Newtonsoft.Json.7.0.1.nupkg" d:Source="File" Path="Packages\Newtonsoft.Json.7.0.1.nupkg" d:VsixSubPath="Packages" />
+		<Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="SampleItemTemplate" d:TargetPath="|SampleItemTemplate;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+	</Assets>
+</PackageManifest>

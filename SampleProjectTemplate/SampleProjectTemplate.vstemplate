@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+	<TemplateData>
+		<Name>SampleProjectTemplate</Name>
+		<Description>SampleProjectTemplate</Description>
+		<Icon>SampleProjectTemplate.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+		<SortOrder>1000</SortOrder>
+		<TemplateID>33905828-53ba-4f87-99cb-784dccffe477</TemplateID>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>SampleProjectTemplate</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true" OpenInEditor="true">App.config</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="GetToken.cs">GetToken.cs</ProjectItem>
+			<ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+		</Project>
+	</TemplateContent>
+	<!-- For NuGet add this: as is-->
+	<WizardExtension>
+		<Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+		<FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+	</WizardExtension>
+	<!-- For NuGet add this: replace repositoryId with Product ID from the template VSIX (source.extension.vsixmanifest) -->
+	<WizardData>
+		<packages repository="extension"
+          repositoryId="SampleTemplatePackage.Jason Lattimer.61861b84-7fb5-48ad-b7c2-afc3b169a4b4">
+			<package id="Microsoft.IdentityModel.Clients.ActiveDirectory" version="2.19.208020213" />
+			<package id="Newtonsoft.Json" version="7.0.1" />
+		</packages>
+	</WizardData>
+</VSTemplate>
