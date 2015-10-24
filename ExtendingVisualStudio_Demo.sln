@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalyzerFix.Vsix", "Analyze
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adornments", "Adornments\Adornments.csproj", "{7AFBF5D4-B13F-43EA-82B3-7760561B2A13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlRefactoring", "XmlRefactoring\XmlRefactoring\XmlRefactoring.csproj", "{ACA6DBD4-B1F5-400F-889F-64DDFBA2289B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlRefactoring.Vsix", "XmlRefactoring\XmlRefactoring.Vsix\XmlRefactoring.Vsix.csproj", "{5F21356F-7DF2-41DE-BB9A-C85D22DCA1FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{7AFBF5D4-B13F-43EA-82B3-7760561B2A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AFBF5D4-B13F-43EA-82B3-7760561B2A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AFBF5D4-B13F-43EA-82B3-7760561B2A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA6DBD4-B1F5-400F-889F-64DDFBA2289B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA6DBD4-B1F5-400F-889F-64DDFBA2289B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA6DBD4-B1F5-400F-889F-64DDFBA2289B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA6DBD4-B1F5-400F-889F-64DDFBA2289B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F21356F-7DF2-41DE-BB9A-C85D22DCA1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F21356F-7DF2-41DE-BB9A-C85D22DCA1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F21356F-7DF2-41DE-BB9A-C85D22DCA1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F21356F-7DF2-41DE-BB9A-C85D22DCA1FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
