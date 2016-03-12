@@ -10,7 +10,7 @@ namespace AnalyzerFix
 	[DiagnosticAnalyzer(LanguageNames.CSharp)]
 	public class SmaeUppercaseAnalyzer : DiagnosticAnalyzer
 	{
-		public const string DiagnosticId = "Syntax Analyzer [0002]";
+		public const string DiagnosticId = "SyntaxAnalyzer0002";
 		internal const string Title = "Attribute name contains uppercase letter(s)";
 		internal const string MessageFormat = "Attribute name '{0}' contains uppercase letter(s)";
 		internal const string Category = ".NET Compiler Demo";
